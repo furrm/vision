@@ -22,28 +22,19 @@
 </header>
 <div class="container">
     <div class="row">
-        {{sections}}
+
         <div class="chapter-intro">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis distinctio, exercitationem fuga hic ipsam iure molestias nisi odio possimus quasi
-            qui repellendus rerum soluta, unde voluptas voluptate! Alias aliquid aperiam architecto asperiores assumenda cumque et, eum expedita explicabo molestias non
-            nostrum odio odit perferendis quam quidem quisquam quo quod reprehenderit rerum ut veniam voluptatem. Consectetur consequatur facilis laudantium nobis.
+            {{page.fields.introduction}}
         </div>
     </div>
     <div class="row">
-        <div class="card" ng-repeat="section in sections">
-
-            <markup markdown="{{section.fields.body}}">
-            </markup>
-        </div>
-        <div class="card">
+        <div class="card" ng-repeat="section in page.fields.contents">
             <div>
                 <header>
-                    <span class="card-header">Card</span>
+                    <span class="card-header">{{section.fields.title}}</span>
                 </header>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium doloribus in iste iure labore, perferendis repudiandae vero voluptate voluptatum? At
-                corporis delectus deserunt dignissimos, dolor, enim harum iste neque nisi odio praesentium quam sit. Animi, consequuntur, doloribus eaque et harum illo
-                ipsum
-                minima non optio possimus quasi qui quis temporibus.
+                <markup markdown="{{section.fields.body}}">
+                </markup>
             </div>
         </div>
         <div class="card">
@@ -72,14 +63,12 @@
 </div>
 
 
-
 <script type="application/javascript" src="lib/lodash/dist/lodash.js"></script>
 <script type="application/javascript" src="lib/marked/lib/marked.js"></script>
 
 <script type="application/javascript" src="lib/angular-1.2.23/angular.js"></script>
 <script type="application/javascript" src="lib/angular-1.2.23/angular-resource.js"></script>
 <script type="application/javascript" src="lib/angular-contentful/angular-contentful.js"></script>
-
 
 
 <script type="application/javascript" src="js/app.js"></script>

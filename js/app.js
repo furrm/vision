@@ -53,7 +53,8 @@
                     page.fields.contents = contents;
 
 
-                    $scope.sections = page.fields.contents;
+                    $scope.page = page;
+//                    $scope.sections = page.fields.contents;
 
 
 //                    $rootScope.$broadcast('got-data', appSettings.appId);
