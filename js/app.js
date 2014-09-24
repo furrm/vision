@@ -14,7 +14,8 @@
 
 //            appSettings.appId = "5rzOrLJdHqYEqA2mMgEQY2";
 
-            var pageId = "1Whl3oULFq68CS2eGIu6uW"
+            var pageId = "1Whl3oULFq68CS2eGIu6uW" // VISION
+            var pageId = "5rTEpG3iNyiKaE0oS6ocqw" // TRAINING
 
             query = {
                 "sys.id": pageId,
